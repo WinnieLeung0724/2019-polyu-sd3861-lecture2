@@ -3,7 +3,7 @@
 const path = document.getElementById("mountain");
 const svg = document.getElementById("svg");
 
-window.onload = () => hello();
+window.onload = () => generateMountain();
 
 const themes = {
   rocky: ["#7e949c", "#cad7db"],
