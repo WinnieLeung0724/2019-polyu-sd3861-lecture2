@@ -22,9 +22,11 @@ svg {
 }
 
 .cloud {
-  transform-origin: 50%;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
   &.blur {
-    filter: url(#blur);
+    -webkit-filter: url(#blur);
+            filter: url(#blur);
   }
 }
 
@@ -83,79 +85,155 @@ button {
   cursor: pointer;
   transition: 0.25s ease-in-out;
   &:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 .pop {
-  animation: pop 0.3s ease-in-out forwards;
+  -webkit-animation: pop 0.3s ease-in-out forwards;
+          animation: pop 0.3s ease-in-out forwards;
 }
 
 .slidein {
-  animation: slidein 1s ease-out forwards;
+  -webkit-animation: slidein 1s ease-out forwards;
+          animation: slidein 1s ease-out forwards;
 }
 
 .fromLeft {
-  animation: fromleft 1s ease-out forwards;
+  -webkit-animation: fromleft 1s ease-out forwards;
+          animation: fromleft 1s ease-out forwards;
 }
 
 .fromRight {
-  animation: fromright 1s ease-out forwards;
+  -webkit-animation: fromright 1s ease-out forwards;
+          animation: fromright 1s ease-out forwards;
 }
 
 #mountain,
 .highlight {
-  transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
 }
 
 button:focus {
   outline: 0;
 }
 
-@keyframes slidein {
+@-webkit-keyframes slidein {
   from {
-    transform: scale(0.925);
+    -webkit-transform: scale(0.925);
+            transform: scale(0.925);
   }
   to {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes slidein {
+  from {
+    -webkit-transform: scale(0.925);
+            transform: scale(0.925);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fromleft {
+  from {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes fromleft {
   from {
-    transform: translateX(-1px);
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);
   }
   to {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes fromright {
+  from {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes fromright {
   from {
-    transform: translateX(1px);
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px);
   }
   to {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes clouds {
+  from {
+    -webkit-transform: translateX((random(11) + 4)px);
+            transform: translateX((random(11) + 4)px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
 }
 
 @keyframes clouds {
   from {
-    transform: translateX((random(11) + 4)px);
+    -webkit-transform: translateX((random(11) + 4)px);
+            transform: translateX((random(11) + 4)px);
   }
   to {
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  a 50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  75%,
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes pop {
   0% {
-    transform: scale(1);
-  }a
-  50% {
-    transform: scale(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  a 50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   75%,
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
