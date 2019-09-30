@@ -12,7 +12,7 @@ const themes = {
   icy: ["#4c7b8c", "#91c7db"]
 };
 
-function hello() {
+function generateMountain() {
   svg.classList.add("pop");
   path.classList = "";
   setTimeout(function() {
