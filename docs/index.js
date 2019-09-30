@@ -3,7 +3,7 @@
 const path = document.getElementById("mountain");
 const svg = document.getElementById("svg");
 
-window.onload = () => generateMountain();
+window.onload = () => hello();
 
 const themes = {
   rocky: ["#7e949c", "#cad7db"],
@@ -12,7 +12,7 @@ const themes = {
   icy: ["#4c7b8c", "#91c7db"]
 };
 
-function generateMountain() {
+function hello() {
   svg.classList.add("pop");
   path.classList = "";
   setTimeout(function() {
